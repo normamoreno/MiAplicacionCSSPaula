@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.utng.divinaphpsql.SelectVideoActivity">
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_video_php"
+        android:background="@drawable/imag1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_video_mysql"
+        android:background="@drawable/imag11"
+        android:layout_alignTop="@+id/btn_video_php"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/imag8"
+        android:id="@+id/btn_video_phpmysql"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Curso basico 2"
+        android:id="@+id/txv_video_mysql"
+        android:layout_below="@+id/btn_video_mysql"
+        android:layout_alignRight="@+id/btn_video_mysql"
+        android:layout_alignEnd="@+id/btn_video_mysql" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Curso basico 1"
+        android:id="@+id/txv_video_php"
+        android:layout_below="@+id/btn_video_php"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Curso basico 3"
+        android:id="@+id/txv_video_phpmysql"
+        android:layout_below="@+id/btn_video_phpmysql"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

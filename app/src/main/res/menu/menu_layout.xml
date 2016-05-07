@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mi_etiqueta_mari_d_app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SeleccionModuloActivity"
+    >
+
+    <item
+        android:title="@string/configuracion"
+        android:id="@+id/itm_menu_bar_configuracion"
+        mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="@string/desarrollo" android:id="@+id/itm_menu_bar_desarrollador" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="@string/videoo" android:id="@+id/itm_menu_bar_video" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="@string/musica" android:id="@+id/itm_menu_bar_musica" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="Correo" android:id="@+id/itm_menu_bar_correo" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="Memoramas" android:id="@+id/itm_menu_bar_juegos" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="Galeria" android:id="@+id/itm_menu_bar_galery" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="Utilerias" android:id="@+id/itm_menu_bar_tools" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="Streaming" android:id="@+id/itm_menu_bar_streaming" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="Progreso" android:id="@+id/itm_menu_bar_progreso" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="Camara" android:id="@+id/itm_menu_bar_camara" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="Video promocional" android:id="@+id/itm_menu_bar_video_pro" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item
+        android:title="@string/grafica"
+        android:id="@+id/itm_menu_bar_grafica"
+        mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item
+        android:title="@string/teme"
+        android:id="@+id/itm_menu_bar_Tema"
+        mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item
+        android:title="Localización"
+        android:id="@+id/itm_menu_bar_maps"
+        mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item
+        android:title="Buscaminas"
+        android:id="@+id/itm_menu_bar_buscaminas"
+        mi_etiqueta_mari_d_app:showAsAction="never"></item>
+
+    <item android:title="@string/salir" android:id="@+id/itm_menu_bar_progreso_salir" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+</menu>

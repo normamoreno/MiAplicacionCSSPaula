@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayout"
+    android:layout_height="match_parent"
+    android:paddingLeft="10pt"
+    android:paddingRight="10pt"
+    android:paddingTop="5pt"
+    android:paddingBottom="10pt"
+    tools:context=".SeleccionDificultadActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_selec_title"
+        android:text="Temas"
+        android:textSize="15pt"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/imag5"
+        android:id="@+id/img_mod"
+        android:layout_below="@id/txv_selec_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introducción"
+        android:background="#ffffff"
+        style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:id="@+id/txv_selec1"
+        android:layout_alignBottom="@+id/img_mod"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selectores"
+        android:background="#ffffff"
+        style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:id="@+id/txv_selec2"
+        android:layout_below="@+id/txv_selec1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Posicionamiento y visualización"
+        android:background="#ffffff"
+        style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:id="@+id/txv_selec3"
+        android:layout_below="@+id/txv_selec2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

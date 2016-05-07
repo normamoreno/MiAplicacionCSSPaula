@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">CSS</string>
+    <string name="textocss">
+        "¿Qué es CSS?\n\n"
+        "CSS es un lenguaje utilizado en la presentación de documentos HTML. Un documento HTML viene siendo coloquialmente “una página web”. Así, podemos decir que el lenguaje CSS sirve para dotar de presentación y aspecto, de “estilo”, a una página web. Este lenguaje es principalmente utilizado por parte de diseñadores y programadores web para elegir multitud de opciones de presentación como colores, tipos y tamaños de letra, imágenes de fondo, bordes,  etc."
+    "\n\nBreve historia de CSS\n\n"
+        "Las hojas de estilos aparecieron poco después que el lenguaje de etiquetas SGML, alrededor del año 1970. Desde la creación de SGML, se observó la necesidad de definir un mecanismo que permitiera aplicar de forma consistente diferentes estilos a los documentos electrónicos.\n" +
+        "El gran impulso de los lenguajes de hojas de estilos se produjo con el boom de Internet y el crecimiento exponencial del lenguaje HTML para la creación de documentos electrónicos. La guerra de navegadores y la falta de un estándar para la definición de los estilos dificultaban la creación de documentos con la misma apariencia en diferentes navegadores.\n\n"
+        "\n\nCaracterísticas  y ventajas de CSS\n\n"
+        "El modo de fucionamiento de las CSS consiste en definir, mediante una sintaxis especial, la forma de presentación que le aplicaremos a:\n"
+        "● Un web entero, de modo que se puede definir la forma de todo el web de una sola vez.\n"
+        "● Un documento HTML o página, se puede definir la forma, en un pequeño trozo de código en la cabecera, a toda la página.\n"
+        "● Una porción del documento, aplicando estilos visibles en un trozo de la página.\n"
+        "● Una etiqueta en concreto, llegando incluso a poder definir varios estilos diferentes para una sola etiqueta. Esto es muy importante ya que ofrece potencia en nuestra programación. Podemos definir, por ejemplo, varios tipos de párrafos: en rojo, en azul, con margenes, sin ellos...\n"
+        "La potencia de la tecnología salta a la vista. Pero no solo se queda aquí, ya que además esta sintaxis CSS permite aplicar al documento formato de modo mucho más exacto. Si antes el HTML se nos quedaba corto para maquetar las páginas y teníamos que utiliza trucos para conseguir nuestros efectos, ahora tenemos muchas más herramientas que nos permiten definir esta forma:\n\n"
+        "● Podemos definir la distancia entre líneas del documento.\n"
+        "● Se puede aplicar identado a las primeras líneas del párrafo.\n"
+        "● Podemos colocar elementos en la página con mayor precisión, y sin lugar a errores.\n"
+        "● Y mucho más, como definr la visivilidad de los elementos, margenes, subrallados, tachados...\n"
+        "Y seguimos mostrandoos ventajas, ya que si con el HTML tan sólo podíamos definir atributos en las páginas con pixeles y porcentajes, ahora podemos definir utilizando muchas más unidades como:\n"
+        "● Pixels (px) y porcentaje (%), como antes.\n"
+        "● Pulgadas (in)\n"
+        "● Puntos (pt)\n"
+        "● Centímetros (cm);"
+        "\n\nNavegadores que soportan CSS\n\n"
+        "Esta tecnología es bastante nueva, por lo que no todos los navegadores la soportan. En concreto, sólo los navegadores de Netscape versiones de la 4 en adelante y de Microsoft a partir de la versión 3 son capaces de comprender los estilos en sintaxis CSS. Además cabe destacar que no todos los navegadores implementan las mismas funciones de hojas de estilos, por ejemplo, Microsoft Internet Explorer 3 no soporta todo lo relativo a capas.\n"
+        "Esto quiere decir que debemos de usar esta tecnología con cuidado, ya que muchos usuarios no podrán ver los formatos que apliquemos a las páginas con CSS. Así pues, utilizad las hojas de estilos cuando estas no vayan a suponer un problema. "
+        "Los navegadores Firefox, Chrome, Safari y Opera son los más avanzados en el soporte de CSS, ya que incluyen muchos elementos de la futura versión CSS 3 y un soporte casi perfecto de la actual version 2.1.\n"
+        "\n"
+        "Por su parte, el navegador Internet Explorer sólo puede considerarse adecuado desde el punto de vista de CSS a partir de su versión 7. Internet Explorer 6, utilizado todavía por un número no despreciable de usuarios, sufre carencias muy importantes y contiene decenas de errores en su soporte de CSS. Internet Explorer 8 soporta casi todas las propiedades y características de CSS 2.1."
+    </string>
+    <string name="css2">"Selectores universal\n\nEl selector universal se marca con un asterisco “*” y abarca a todos los elementos del documento XHTML. El siguiente ejemplo aplicaría un fondo amarillo a todos los elementos que soportasen la propiedad background-color salvo que se usase un selector más específico que lo sobrescriba.\n"
+        "* { background-color: yellow; }\n"
+        "El siguiente ejemplo podría ser aplicado a todos los elementos del documento XHTML que tengan como nombre de clase enfatizado (class=\"enfatizado\")\n"
+        "*.enfatizado {background-color: blue;}\n"
+        "Cuando el asterisco forma parte de un patrón, como en el ejemplo anterior, puede ser omitido tranquilamente. Un patrón de .enfatizado sería igual de efectivo que *.enfatizado\n"
+        "Se utiliza para seleccionar todos los elementos de la página. El siguiente ejemplo elimina el margen y el relleno de todos los elementos HTML (por ahora no es importante fijarse en la parte de la declaración de la regla CSS):\n"
+        "\n\n"
+        "* {\n\n"
+        "  margin: 0;\n\n"
+        "  padding: 0;\n\n"
+        "}\n\n"
+"Los selectores por tipo \n\nLos selectores por tipo afectan a todas las apariciones de un elemento en el documento XHTML. El siguiente ejemplo aplica un fondo blanco a todos los elementos &lt;p&gt; del documento.\n"
+        "p {background-color: white;}\n"
+        "Cuando varios selectores van a compartir el bloque de declaraciones, los selectores pueden ser agrupados separándolos con una coma. El siguiente ejemplo aplicará un fond o negro a todos los elementos &lt;h1&gt; y &lt;h2&gt;\n\n"
+        "h1, h2 {background-color: black;}\n"
+"Si se considera el siguiente código HTML de ejemplo:\n"
+        "\n"
+        "&lt;body&gt;\n"
+        "  &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;\n"
+        "  &lt;p&gt;Nunc sed lacus et est adipiscing accumsan...&lt;/p&gt;\n"
+        "  &lt;p&gt;Class aptent taciti sociosqu ad litora...&lt;/p&gt;\n"
+        "&lt;/body&gt;\n"
+        "¿Cómo se pueden aplicar estilos CSS sólo al primer párrafo? El selector universal (*) no se puede utilizar porque selecciona todos los elementos de la página. El selector de tipo o etiqueta (p) tampoco se puede utilizar porque seleccionaría todos los párrafos. Por último, el selector descendente (body p) tampoco se puede utilizar porque todos los párrafos se encuentran en el mismo sitio.\n"
+        "\n"
+        "Una de las soluciones más sencillas para aplicar estilos a un solo elemento de la página consiste en utilizar el atributo class de HTML sobre ese elemento para indicar directamente la regla CSS que se le debe aplicar:\n"
+        "\n"
+        "&lt;body&gt;\n"
+        "  &lt;p class=\"destacado\"&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;\n"
+        "  &lt;p&gt;Nunc sed lacus et est adipiscing accumsan...&lt;/p&gt;\n"
+        "  &lt;p&gt;Class aptent taciti sociosqu ad litora...&lt;/p&gt;\n"
+        "&lt;/body&gt;\n"
+        "A continuación, se crea en el archivo CSS una nueva regla llamada destacado con todos los estilos que se van a aplicar al elemento. Para que el navegador no confunda este selector con los otros tipos de selectores, se prefija el valor del atributo class con un punto (.) tal y como muestra el siguiente ejemplo:\n"
+        "\n"
+        ".destacado { color: red; }\n"
+        "El selector .destacado se interpreta como \"cualquier elemento de la página cuyo atributo class sea igual a destacado\", por lo que solamente el primer párrafo cumple esa condición.\n"
+        "\n"
+        "Este tipo de selectores se llaman selectores de clase y son los más utilizados junto con los selectores de ID que se verán a continuación. La principal característica de este selector es que en una misma página HTML varios elementos diferentes pueden utilizar el mismo valor en el atributo class:\n"
+        "\n"
+        "&lt;body&gt;\n"
+        "  &lt;p class=\"destacado\"&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;\n"
+        "  &lt;p&gt;Nunc sed lacus et &lt;a href=\"#\" class=\"destacado\"&gt;est adipiscing&lt;/a&gt; accumsan...&lt;/p&gt;\n"
+        "  &lt;p&gt;Class aptent taciti &lt;em class=\"destacado\"&gt;sociosqu ad&lt;/em&gt; litora...&lt;/p&gt;\n"
+        "&lt;/body&gt;\n"
+        "Selector por clase\n\nLos selectores de clase son imprescindibles para diseñar páginas web complejas, ya que permiten disponer de una precisión total al seleccionar los elementos. Además, estos selectores permiten reutilizar los mismos estilos para varios elementos diferentes."
+"En ocasiones, es necesario aplicar estilos CSS a un único elemento de la página. Aunque puede utilizarse un selector de clase para aplicar estilos a un único elemento, existe otro selector más eficiente en este caso.\n"
+        "\n"
+        "Selectores ID\n\nEl selector de ID permite seleccionar un elemento de la página a través del valor de su atributo id. Este tipo de selectores sólo seleccionan un elemento de la página porque el valor del atributo id no se puede repetir en dos elementos diferentes de una misma página.\n"
+        "\n"
+        "La sintaxis de los selectores de ID es muy parecida a la de los selectores de clase, salvo que se utiliza el símbolo de la almohadilla (#) en vez del punto (.) como prefijo del nombre de la regla CSS:\n"
+        "\n"
+        "#destacado { color: red; }\n"
+        " \n"
+        "&lt;p&gt;Primer párrafo&lt;/p&gt;\n"
+        "&lt;p id=\"destacado\"&gt;Segundo párrafo&lt;/p&gt;\n"
+        "&lt;p&gt;Tercer párrafo&lt;/p&gt;\n"
+        "En el ejemplo anterior, el selector #destacado solamente selecciona el segundo párrafo (cuyo atributo id es igual a destacado)."
+</string>
+    <string name="css3">"Layout\n\nEl diseño de las páginas web habituales se divide en bloques: cabecera, menú, contenidos y pie de página. Visualmente, los bloques se disponen en varias filas y columnas. Por este motivo, hace varios años la estructura de las páginas HTML se definía mediante tablas.\n"
+        "\n"
+        "El desarrollo de CSS ha permitido que se puedan realizar los mismos diseños sin utilizar tablas HTML. Las principales ventajas de diseñar la estructura de las páginas web con CSS en vez de con tablas HTML son las siguientes:\n"
+        "\n"
+        "Mantenimiento: una página diseñada exclusivamente con CSS es mucho más fácil de mantener que una página diseñada con tablas. Cambiar el aspecto de una página creada con CSS es tan fácil como modificar unas pocas reglas en las hojas de estilos. Sin embargo, realizar la misma modificación en una página creada con tablas supone un esfuerzo muy superior y es más probable cometer errores.\n"
+        "Accesibilidad: las páginas creadas con CSS son más accesibles que las páginas diseñadas con tablas. De hecho, los navegadores que utilizan las personas discapacitadas (en especial las personas invidentes) pueden tener dificultades con la estructura de las páginas complejas creadas con tablas HTML. No obstante, diseñar una página web exclusivamente con CSS no garantiza que la página sea accesible.\n"
+        "Velocidad de carga: el código HTML de una página diseñada con tablas es mucho mayor que el código de la misma página diseñada exclusivamente con CSS, por lo que tarda más tiempo en descargarse. En cualquier caso, si el usuario accede al sitio con una conexión de banda ancha y la página es de un tamaño medio o reducido, las diferencias son casi imperceptibles.\n"
+        "Semántica: aunque resulta obvio, las tablas HTML sólo se deben utilizar para mostrar datos cuya información sólo se entiende en forma de filas y columnas. Utilizar tablas para crear la estructura completa de una página es tan absurdo como utilizar por ejemplo la etiqueta &lt;ul&gt; para crear párrafos de texto.\n"
+        "Por estos motivos, la estructura basada en tablas ha dado paso a la estructura basada exclusivamente en CSS. Aunque crear la estructura de las páginas sólo con CSS presenta en ocasiones retos importantes, en general es más sencilla y flexible.\n\n"
+"Centrar una página verticalmente\n\nCuando se centra una página web de forma horizontal, sus márgenes laterales se adaptan dinámicamente de forma que la página siempre aparece en el centro de la ventana del navegador, independientemente de la anchura de la ventana. De la misma forma, cuando se centra una página web verticalmente, el objetivo es que sus contenidos aparezcan en el centro de la ventana del navegador y por tanto, que sus márgenes verticales se adapten de forma dinámica en función del tamaño de la ventana del navegador.\n"
+        "\n"
+        "Aunque centrar una página web horizontalmente es muy sencillo, centrarla verticalmente es mucho más complicado. Afortunadamente, no es muy común que una página web aparezca centrada de forma vertical. El motivo es que la mayoría de páginas web son más altas que la ventana del navegador, por lo que no es posible centrarlas verticalmente.\n"
+        "\n"
+        "A continuación se muestra la forma de centrar una página web respecto de la ventana del navegador, es decir, centrarla tanto horizontalmente como verticalmente.\n"
+        "\n"
+        "Siguiendo el mismo razonamiento que el planteado para centrar la página horizontalmente, se podrían utilizar las siguientes reglas CSS para centrar la página respecto de la ventana del navegador:\n"
+        "\n"
+        "#contenedor {\n"
+        "  width: 300px;\n"
+        "  height: 250px;\n"
+        "  margin: auto;\n"
+        "}\n"
+        " \n"
+        "&lt;body&gt;\n"
+        "  &lt;div id=\"contenedor\"&gt;\n"
+        "    &lt;h1&gt;Lorem ipsum dolor sit amet&lt;/h1&gt;\n"
+        "    ...\n"
+        "  &lt;/div&gt;\n"
+        "&lt;/body&gt;\n"
+        "Si el valor auto se puede utilizar para que los márgenes laterales se adapten dinámicamente, también debería ser posible utilizar el valor auto para los márgenes verticales. Desafortunadamente, la propiedad margin: auto no funciona tal y como se espera para los márgenes verticales y la página no se muestra centrada.\n"
+        "\n"
+        "La solución correcta para centrar verticalmente una página web se basa en el posicionamiento absoluto e implica realizar un cálculo matemático sencillo\n\n. "
+"Alturas/anchuras maximas y minimas\n\nCuando se diseña la estructura de una página web, se debe tomar la decisión de optar por un diseño de anchura fija o un diseño cuya anchura se adapta a la anchura de la ventana del navegador.\n"
+        "\n"
+        "Sin embargo, la mayoría de las veces sería conveniente una solución intermedia: que la anchura de la página sea variable y se adapte a la anchura de la ventana del navegador, pero respetando ciertos límites. En otras palabras, que la anchura de la página no sea tan pequeña como para que no se puedan mostrar correctamente los contenidos y tampoco sea tan ancha como para que las líneas de texto no puedan leerse cómodamente.\n"
+        "\n"
+        "CSS define cuatro propiedades que permiten limitar la anchura y altura mínima y máxima de cualquier elemento de la página. Las propiedades son max-width, min-width, max-height y min-height."
+        "De esta forma, para conseguir un diseño de anchura variable pero controlada, se podrían utilizar reglas CSS como la siguiente:\n"
+        "\n"
+        "#contenedor {\n"
+        "  min-width: 500px;\n"
+        "  max-width: 900px;\n"
+        "}\n"
+        "Las propiedades que definen la altura y anchura máxima y mínima se pueden aplicar a cualquier elemento, aunque solamente suelen utilizarse para estructurar la página. En general, las propiedades más utilizadas son max-width y min-width, ya que no es muy habitual definir alturas máximas y mínimas.\n"
+        "\n"
+        "Desafortunadamente, Internet Explorer 6 y las versiones anteriores no soportan ninguna de las cuatro propiedades sobre ningún elemento. Hasta que se incorpore en las nuevas versiones del navegador, es preciso recurrir a trucos que simulen el comportamiento de las propiedades:\n"
+        "\n"
+        "max-width equivalente para Internet Explorer:\n"
+        "\n"
+        "div {\n"
+        "  max-width: 800px;\n"
+        "  width: expression(document.body.clientWidth &gt; 801? \"800px\": \"auto\");\n"
+        "}\n"
+        "min-width equivalente para Internet Explorer:\n"
+        "\n"
+        "div {\n"
+        "  min-width:800px;\n"
+        "  width: expression(document.body.clientWidth &lt; 801? \"800px\": \"auto\" );\n"
+        "}\n"
+        "max-height equivalente para Internet Explorer:\n"
+        "\n"
+        "div {\n"
+        "  max-height: 300px;\n"
+        "  overflow: hidden;\n"
+        "  height: expression(this.scrollHeight &gt; 301? \"300px\" : \"auto\" );\n"
+        "}\n"
+        "min-height equivalente para Internet Explorer:\n"
+        "\n"
+        "div {\n"
+        "  min-height:300px;\n"
+        "  overflow: hidden;\n"
+        "  height: expression(this.scrollHeight &lt; 301? \"300px\" : \"auto\" );\n\n"
+        "}\n\n"
+"Centrar una página horizontalmente\n\nA medida que aumenta el tamaño y la resolución de las pantallas de ordenador, se hace más difícil diseñar páginas que se adapten al tamaño de la ventana del navegador. El principal reto que se presenta con resoluciones superiores a 1024 x 768 píxel, es que las líneas de texto son demasiado largas como para leerlas con comodidad. Por ese motivo, normalmente se opta por diseños con una anchura fija limitada a un valor aceptable para mantener la legibilidad del texto.\n"
+        "\n"
+        "Por otra parte, los navegadores alinean por defecto las páginas web a la izquierda de la ventana. Cuando la resolución de la pantalla es muy grande, la mayoría de páginas de anchura fija alineadas a la izquierda parecen muy estrechas y provocan una sensación de vacío.\n"
+        "\n"
+        "La solución más sencilla para evitar los grandes espacios en blanco consiste en crear páginas con una anchura fija adecuada y centrar la página horizontalmente respecto de la ventana del navegador. Las siguientes imágenes muestran el aspecto de una página centrada a medida que aumenta la anchura de la ventana del navegador."
+        "Utilizando la propiedad margin de CSS, es muy sencillo centrar una página web horizontalmente. La solución consiste en agrupar todos los contenidos de la página en un elemento &lt;div&gt; y asignarle a ese &lt;div&gt; unos márgenes laterales automáticos. El &lt;div&gt; que encierra los contenidos se suele llamar contenedor (en inglés se denomina wrapper o container):\n"
+        "\n"
+        "#contenedor {\n"
+        "  width: 300px;\n"
+        "  margin: 0 auto;\n"
+        "}\n"
+        " \n"
+        "&lt;body&gt;\n"
+        "  &lt;div id=\"contenedor\"&gt;\n"
+        "    &lt;h1&gt;Lorem ipsum dolor sit amet&lt;/h1&gt;\n"
+        "    ...\n"
+        "  &lt;/div&gt;\n"
+        "&lt;/body&gt;\n"
+        "Como se sabe, el valor 0 auto significa que los márgenes superior e inferior son iguales a 0 y los márgenes laterales toman un valor de auto. Cuando se asignan márgenes laterales automáticos a un elemento, los navegadores centran ese elemento respecto de su elemento padre. En este ejemplo, el elemento padre del &lt;div&gt; es la propia página (el elemento &lt;body&gt;), por lo que se consigue centrar el elemento &lt;div&gt; respecto de la ventana del navegador.\n"
+        "\n"
+        "Modificando ligeramente el código CSS anterior se puede conseguir un diseño dinámico o líquido (también llamado fluido) que se adapta a la anchura de la ventana del navegador y permanece siempre centrado:\n"
+        "\n"
+        "#contenedor {\n"
+        "  width: 70%;\n"
+        "  margin: 0 auto;\n"
+        "}\n"
+        "Estableciendo la anchura del elemento contenedor mediante un porcentaje, su anchura se adapta de forma continua a la anchura de la ventana del navegador. De esta forma, si se reduce la anchura de la ventana del navegador, la página se verá más estrecha y si se maximiza la ventana del navegador, la página se verá más ancha."
+</string>
+    <string name="error_autenticar">Error en los datos</string>
+    <string name="title_create_login_registro">Registro</string>
+    <string name="datos_guardados_correctamente">"Los datos se guardaron correctamente"</string>
+    <string name="btn_create_guardar">Guardar</string>
+    <string name="btn_create_cancelar">Cancelar</string>
+    <string name="title_login">Login</string>
+    <string name="nuevo_registro">Nuevo Registro</string>
+    <string name="usuario">Usuario</string>
+    <string name="action_settings">Settings</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="acceder">Acceder</string>
+    <string name="crear_cuenta">Crear una cuenta</string>
+    <string name="mas_tarde">Aceptar</string>
+    <string name="aceptar">Más tarde</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="desarrollador">Desarrollador</string>
+    <string name="universidad">Video de la Universidad</string>
+    <string name="asignatura">Asignatura</string>
+    <string name="video">video</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="emptyString">empyty</string>
+    <string name="musica">Música de Fondo</string>
+    <string name="videoo">Video</string>
+    <string name="salir">Salir</string>
+    <string name="sugerencias">Sugerencias</string>
+    <string name="progreso_curso">Progreso del curso</string>
+    <string name="universidad2">Universidad</string>
+    <string name="asigatura">Asignatura</string>
+    <string name="desarrollo">Desarrolladora</string>
+    <string name="configuracion">Configuración</string>
+    <string name="salir1">Salir</string>
+    <string name="sugerencisa">Sugerencias</string>
+    <string name="grafica">Grafica</string>
+    <string name="menu_bar_grafica_on">Grafica</string>
+    <string name="teme">Temas</string>
+
+
+
+    <string name="title_activity_tema">TemaActivity</string>
+
+    <!--Informacion contenida en los temas-->
+
+    <string name="title_activity_configuracion">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">Paula Aldama</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="intent">"Intento(s) "</string>
+    <string-array name="type">
+        <item>Nuevo Juego</item>
+        <item>4 X 4</item>
+        <item>4 X 5</item>
+        <item>4 X 6</item>
+        <item>5 X 6</item>
+        <item>6 X 6</item>
+    </string-array>
+    <string name="testsong_20_sec">http://www.hrupin.com/wp-content/uploads/mp3/testsong_20_sec.mp3</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="btn_evaluacion">Evaluación</string>
+</resources>

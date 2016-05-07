@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mi_etiqueta_mari_d_app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SeleccionModuloActivity">
+    <item android:title="@string/sugerencias" android:id="@+id/itm_menu_dos_bar_progreso_sugerencias" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+    <item android:title="@string/salir1" android:id="@+id/itm_menu_dos_bar_progreso_salir" mi_etiqueta_mari_d_app:showAsAction="never"></item>
+
+
+</menu>

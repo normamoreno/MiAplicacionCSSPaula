@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/calculadora"
+            android:layout_margin="20dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/imag6"/>
+
+        <Button
+            android:id="@+id/cronometro"
+            android:layout_toRightOf="@id/calculadora"
+            android:layout_margin="20dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/i4"/>
+
+        <Button
+            android:id="@+id/btn_galeria_tres"
+            android:layout_toRightOf="@id/cronometro"
+            android:layout_margin="20dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/imag2"/>
+
+    </RelativeLayout>
+</HorizontalScrollView>

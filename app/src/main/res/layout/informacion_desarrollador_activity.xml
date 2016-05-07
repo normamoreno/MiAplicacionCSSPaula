@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Desarrolladora"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="\n\t\tNombre: María Paula Aldama Valdez
+                       \n\t
+                      Correo: aldama180@gmail.com
+                      \n\t
+                      Titulo: TSU en Sistemas Informáticos
+                      \n\t
+                      Materia: Desarrollo de Aplicaciones III
+                      \n\t
+                      Universidad: UTNG
+                      \n\t
+                      Ubicación: Dolores Hidalgo Cuna de la Independencia Nacional, Guanajuato
+                      \n\t
+                      Dirección: Av. Educación Tecnológica No.34
+                      \n\t
+                      Teléfono de la Universidad: 01 418 182 5500
+                     \n\t
+                      Referencias Bibliográficas usadas: 2006-2016 LibrosWeb.es
+                      \n\t
+                      https://compumakia.files.wordpress.com/2012/02/manualcsshojasdeestilos.pdf
+
+
+                      "
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
